@@ -9,6 +9,7 @@ import LoginForm from './components/login/Login';
 import Profile from './components/profile/Profile';
 import Header from './components/header/Header';
 import About from './components/about/about';
+import Main from './components/main/main';
 function App() {
   return (
       <Router>
@@ -26,6 +27,7 @@ function AppContent() {
     <>
       {shouldShowHeader && <Header />}
       <Routes>
+        <Route path='/main' element={<Main />} />
         <Route path='/about' element={<About />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/register' element={<RegistrationForm />} />

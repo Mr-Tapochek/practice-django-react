@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header>
             <section className="logo">
-                <span>УютныйОчаг</span>
+                <Link to='main/' className="header-link">УютныйОчаг</Link>
             </section>
             <section className="links">
                 <Link to='catalog/' className="header-link">Каталог</Link>
